@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RestAPIAutomation" verbose="1" >
+  <test name="Google placesearch" >
+    <classes>
+    <class name="googleAPI.GetRequest"/>
+    <class name="googleAPI.PostRequest"/>
+    </classes>
+ </test>
+ <test name="googleplacesearch2">
+ <classes>
+ <class name="googleAPI.DeleteRequest"/>
+ </classes>
+ </test>
+</suite>
