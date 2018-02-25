@@ -32,7 +32,7 @@ public class GetRequest
 		 
 		 then().
 		 
-		 assertThat().statusCode(200).and().contentType(ContentType.JSON);
+		 spec(ResponseSpecTest.setupResponseSpecBuilder());
 		
 
 	}

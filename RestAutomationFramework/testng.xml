@@ -2,6 +2,7 @@
 <suite name="RestAPIAutomation" verbose="1" >
   <test name="Google placesearch" >
     <classes>
+    <class name="googleAPI.ResponseSpecTest"/>
     <class name="googleAPI.GetRequest"/>
     <class name="googleAPI.PostRequest"/>
     </classes>
