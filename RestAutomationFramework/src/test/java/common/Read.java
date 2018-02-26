@@ -6,11 +6,13 @@ import java.io.IOException;
 
 public class Read 
 {
-	public String readData(String fileName)
+	public String readData(String fileName,String key)
 	{
 		BufferedReader reader;
 		
 		String data="";
+		
+		String[] output;
 		
 		try
 		{
@@ -19,12 +21,14 @@ public class Read
 			
 			data=reader.readLine();
 			
-			/*while(data!=null)
+			while(data!=null)
 			{
-				System.out.println(data);
-				
+				if(data.contains(key))
+				{
+					String[] output= data.split(":")
+				}
 				data=reader.readLine();
-			}*/
+			}
 			
 			reader.close();
 			
@@ -36,7 +40,7 @@ public class Read
 		
 		System.out.println("data "+data);
 		
-		return data;
+		return output[1];
 	}
 
 
