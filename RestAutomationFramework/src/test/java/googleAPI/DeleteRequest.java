@@ -20,13 +20,13 @@ public class DeleteRequest
 		
 		RestAssured.baseURI="https://maps.googleapis.com/";
 		
-		String place_id=obj.readData("E:\\POSTRequest.txt");
+		String place_id=obj.readData("E:\\POSTRequest.txt","place_id");
 		
-		System.out.println("till1");
+		/*System.out.println("till1");
 		
 		String[] results=place_id.split(":");
 		
-		System.out.println(results[1]);
+		System.out.println(results[1]);*/
 		
 		given().
 		
@@ -34,7 +34,7 @@ public class DeleteRequest
 		
 		body
 		("{\r\n" + 
-				"  \"place_id\": \""+results[1]+"\"\r\n" + 
+				"  \"place_id\": \""+place_id+"\"\r\n" + 
 				"}").
 		when().
 		post("/maps/api/place/delete/json").
